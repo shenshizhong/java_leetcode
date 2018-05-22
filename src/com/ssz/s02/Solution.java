@@ -1,18 +1,34 @@
 package com.ssz.s02;
 
+import com.ssz.structure.ListNode;
+
 public class Solution {
-    public int reverse(int x) {
-        long res = 0;
-        for (; x != 0; x /= 10)
-            res = res * 10 + x % 10;
-        return res > Integer.MAX_VALUE || res < Integer.MIN_VALUE ? 0 : (int) res;
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode node = new ListNode(0);
+        ListNode n1 = l1, n2 = l2, t = node;
+        int sum = 0;
+        while (n1 != null || n2 != null) {
+            sum /= 10;
+            if (n1 != null) {
+                sum += n1.val;
+                n1 = n1.next;
+            }
+            if (n2 != null) {
+                sum += n2.val;
+                n2 = n2.next;
+            }
+            t.next = new ListNode(sum % 10);
+            t = t.next;
+        }
+        if (sum / 10 != 0) t.next = new ListNode(1);
+        return node.next;
     }
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(solution.reverse(123));
-        System.out.println(solution.reverse(-123));
-        System.out.println(solution.reverse(100));
-        System.out.println(solution.reverse(1000000003));
+        ListNode.print(solution.addTwoNumbers(
+                ListNode.createTestData("[2,4,3]"),
+                ListNode.createTestData("[5,6,4]")
+        ));
     }
 }
