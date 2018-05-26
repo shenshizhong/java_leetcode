@@ -1,4 +1,4 @@
-package com.ssz.s02;
+package com.ssz.easy.s02;
 
 import com.ssz.structure.ListNode;
 

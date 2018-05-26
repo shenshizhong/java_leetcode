@@ -1,4 +1,4 @@
-package com.ssz.s03;
+package com.ssz.easy.s03;
 
 public class Solution {
     public int reverse(int x) {

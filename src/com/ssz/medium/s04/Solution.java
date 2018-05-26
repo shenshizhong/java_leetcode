@@ -1,7 +1,4 @@
-package com.ssz.s04;
-
-import java.util.HashSet;
-import java.util.Set;
+package com.ssz.medium.s04;
 
 public class Solution {
     //方法1

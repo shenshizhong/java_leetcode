@@ -11,6 +11,13 @@ LeetCode 成为 Google 筛选码工的重要途径之一，
 因此从现在开始算法学习不可以视而不见
 2. 随着工作不断的学习,会发现算法越来越重要,特别对于解决问题提供了更多的方案
 
+# 怎么学习
+
+1. com.ssz 包下面有 easy，medium，hard，分别代表难易程度，建议由简单到难
+2. q01 表示第一个问题，Solution 是解决问题的类
+3. structure 是个别算法解决需要用到的结构类
+4. Solution 每个类都可以直接运行，并输出结果
+
 # tanks
 * 这里感谢 Blankj，[https://github.com/Blankj/awesome-java-leetcode](https://github.com/Blankj/awesome-java-leetcode)
 * leetcode 官网地址： [https://leetcode.com/problemset/all/](https://leetcode.com/problemset/all/)

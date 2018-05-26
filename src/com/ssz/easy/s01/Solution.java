@@ -1,4 +1,4 @@
-package com.ssz.s01;
+package com.ssz.easy.s01;
 
 import java.util.Arrays;
 import java.util.HashMap;
