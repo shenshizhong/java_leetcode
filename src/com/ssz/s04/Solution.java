@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Solution {
+    //方法1
     public int lengthOfLongestSubstring(String s) {
         int len;
         if (s == null || (len = s.length()) == 0) return 0;
@@ -20,7 +21,7 @@ public class Solution {
         }
         return max;
     }
-
+//   方法1：这个相对好理解
 //    public int lengthOfLongestSubstring(String s){
 //        int i = 0, j = 0;
 //        int max = 0;
